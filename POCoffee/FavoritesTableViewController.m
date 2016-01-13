@@ -28,7 +28,6 @@
     {
         // Custom initialization
         self.clearsSelectionOnViewWillAppear = YES;
-        Step1ViewController *vc = [[Step1ViewController alloc] init];
     }
     return self;
 }
