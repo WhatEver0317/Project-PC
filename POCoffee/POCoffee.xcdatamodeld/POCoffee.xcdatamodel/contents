@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8195" systemVersion="14F27" minimumToolsVersion="Automatic">
+    <entity name="FavoriteDetail" representedClassName=".FavoriteDetail" syncable="YES">
+        <attribute name="coffeeName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="coffeeVolume" optional="YES" attributeType="Integer 16" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="cwRatio" optional="YES" attributeType="Integer 16" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="dripper" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preinfusionTime" optional="YES" attributeType="Integer 16" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="temperature" optional="YES" attributeType="Integer 16" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="timeMinutes" optional="YES" attributeType="Integer 16" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="timeSeconds" optional="YES" attributeType="Integer 16" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="waterVolume" optional="YES" attributeType="Integer 16" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <relationship name="favoriteDescription" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Favorites" inverseName="favoriteDetail" inverseEntity="Favorites" syncable="YES"/>
+    </entity>
+    <entity name="Favorites" representedClassName=".Favorites" syncable="YES">
+        <attribute name="favoriteDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="favoriteDetail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FavoriteDetail" inverseName="favoriteDescription" inverseEntity="FavoriteDetail" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="FavoriteDetail" positionX="171" positionY="-45" width="128" height="208"/>
+        <element name="Favorites" positionX="-63" positionY="-18" width="128" height="75"/>
+    </elements>
+</model>
